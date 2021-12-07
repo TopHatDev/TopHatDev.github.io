@@ -1,0 +1,107 @@
+:root {
+  --asdf: 1;
+}
+body {
+  background-color: black;
+  margin: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: whitesmoke;
+}
+a {
+  text-decoration: none;
+}
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+}
+
+li {
+  /* float: left; */
+  display: inline-block;
+  border-right: 2px solid #bfbfbf;
+}
+li:last-child {
+  border-right: none;
+}
+li a {
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#MainDiv {
+  padding: 20px;
+  margin-top: 40px;
+  height: 1500px;
+}
+.btnClass {
+  animation: btnAnim 5s linear 0s infinite alternate both;
+  border: none;
+  color: whitesmoke;
+}
+
+@keyframes btnAnim {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: grey;
+  }
+}
